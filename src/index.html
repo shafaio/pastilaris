@@ -134,33 +134,86 @@
         </div>
 
         <div class="flex items-start justify-between border-b border-[#E7EBEA] font-[Poppins]">
-          <div class="flex w-fit items-center space-x-4 border-b-[3px] border-pastilaris-black pb-[30px]">
-            <div class="grid h-[50px] w-[50px] place-items-center rounded-full bg-pastilaris-primary">
-              <img src="assets/image/icons/crown.svg" alt="" />
+          <button class="tab-button flex w-fit items-center space-x-4 border-b-[3px] border-pastilaris-black pb-[30px] font-semibold" data-tab="automations">
+            <div class="icon-wrapper grid h-[50px] w-[50px] place-items-center rounded-full bg-pastilaris-primary">
+              <svg width="24" height="24" class="icon stroke-pastilaris-black" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.7 18.98H7.29999C6.87999 18.98 6.40999 18.65 6.26999 18.25L2.12999 6.66999C1.53999 5.00999 2.22999 4.49999 3.64999 5.51999L7.54999 8.30999C8.19999 8.75999 8.93999 8.52999 9.21999 7.79999L10.98 3.10999C11.54 1.60999 12.47 1.60999 13.03 3.10999L14.79 7.79999C15.07 8.52999 15.81 8.75999 16.45 8.30999L20.11 5.69999C21.67 4.57999 22.42 5.14999 21.78 6.95999L17.74 18.27C17.59 18.65 17.12 18.98 16.7 18.98Z"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path d="M6.5 22H17.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9.5 14H14.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </div>
-            <span class="text-xl font-semibold">Automations</span>
-          </div>
+            <span class="text-xl">Automations</span>
+          </button>
 
-          <div class="flex w-fit items-center space-x-4">
-            <div class="grid h-[50px] w-[50px] place-items-center rounded-full bg-[#ABB4B1]">
-              <img src="assets/image/icons/note-2.svg" alt="" />
+          <button class="tab-button flex w-fit items-center space-x-4 font-medium" data-tab="realtime">
+            <div class="icon-wrapper grid h-[50px] w-[50px] place-items-center rounded-full bg-[#ABB4B1]">
+              <svg class="icon stroke-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.66 10.44L20.68 14.62C19.84 18.23 18.18 19.69 15.06 19.39C14.56 19.35 14.02 19.26 13.44 19.12L11.76 18.72C7.59 17.73 6.3 15.67 7.28 11.49L8.26 7.30001C8.46 6.45001 8.7 5.71001 9 5.10001C10.17 2.68001 12.16 2.03001 15.5 2.82001L17.17 3.21001C21.36 4.19001 22.64 6.26001 21.66 10.44Z"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.06 19.39C14.44 19.81 13.66 20.16 12.71 20.47L11.13 20.99C7.16001 22.27 5.07001 21.2 3.78001 17.23L2.50001 13.28C1.22001 9.30998 2.28001 7.20998 6.25001 5.92998L7.83001 5.40998C8.24001 5.27998 8.63001 5.16998 9.00001 5.09998C8.70001 5.70998 8.46001 6.44998 8.26001 7.29998L7.28001 11.49C6.30001 15.67 7.59001 17.73 11.76 18.72L13.44 19.12C14.02 19.26 14.56 19.35 15.06 19.39Z"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path d="M12.64 8.53003L17.49 9.76003" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M11.66 12.4L14.56 13.14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </div>
-            <span class="text-xl font-medium">Real-Time</span>
-          </div>
+            <span class="text-xl">Real-Time</span>
+          </button>
 
-          <div class="flex w-fit items-center space-x-4">
-            <div class="grid h-[50px] w-[50px] place-items-center rounded-full bg-[#ABB4B1]">
-              <img src="assets/image/icons/device-message.svg" alt="" />
+          <button class="tab-button flex w-fit items-center space-x-4 font-medium" data-tab="lifetime-support">
+            <div class="icon-wrapper grid h-[50px] w-[50px] place-items-center rounded-full bg-[#ABB4B1]">
+              <svg class="icon stroke-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20 12.2V13.9C20 17.05 18.2 18.4 15.5 18.4H6.5C3.8 18.4 2 17.05 2 13.9V8.5C2 5.35 3.8 4 6.5 4H9.2C9.07 4.38 9 4.8 9 5.25V9.15002C9 10.12 9.32 10.94 9.89 11.51C10.46 12.08 11.28 12.4 12.25 12.4V13.79C12.25 14.3 12.83 14.61 13.26 14.33L16.15 12.4H18.75C19.2 12.4 19.62 12.33 20 12.2Z"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22 5.25V9.15002C22 10.64 21.24 11.76 20 12.2C19.62 12.33 19.2 12.4 18.75 12.4H16.15L13.26 14.33C12.83 14.61 12.25 14.3 12.25 13.79V12.4C11.28 12.4 10.46 12.08 9.89 11.51C9.32 10.94 9 10.12 9 9.15002V5.25C9 4.8 9.07 4.38 9.2 4C9.64 2.76 10.76 2 12.25 2H18.75C20.7 2 22 3.3 22 5.25Z"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path d="M7.4 22H14.6" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M11 18.4V22" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M18.4955 7.25H18.5045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15.6957 7.25H15.7047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12.8954 7.25H12.9044" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </div>
-            <span class="text-xl font-medium">Lifetime Support</span>
-          </div>
+            <span class="text-xl">Lifetime Support</span>
+          </button>
 
-          <div class="flex w-fit items-center space-x-4">
-            <div class="grid h-[50px] w-[50px] place-items-center rounded-full bg-[#ABB4B1]">
-              <img src="assets/image/icons/lock.svg" alt="" />
+          <button class="tab-button flex w-fit items-center space-x-4 font-medium" data-tab="high-protection">
+            <div class="icon-wrapper grid h-[50px] w-[50px] place-items-center rounded-full bg-[#ABB4B1]">
+              <svg class="icon stroke-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 10V8C6 4.69 7 2 12 2C17 2 18 4.69 18 8V10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M12 18.5C13.3807 18.5 14.5 17.3807 14.5 16C14.5 14.6193 13.3807 13.5 12 13.5C10.6193 13.5 9.5 14.6193 9.5 16C9.5 17.3807 10.6193 18.5 12 18.5Z"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path d="M17 22H7C3 22 2 21 2 17V15C2 11 3 10 7 10H17C21 10 22 11 22 15V17C22 21 21 22 17 22Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </div>
-            <span class="text-xl font-medium">Hight Protection</span>
-          </div>
+            <span class="text-xl">Hight Protection</span>
+          </button>
         </div>
 
         <div class="flex items-center justify-between gap-[50px] px-[30px]">
@@ -168,17 +221,30 @@
             <img src="assets/image/thumbnails/Group 31.png" alt="" loading="lazy" />
           </div>
 
-          <div class="space-y-[30px]">
-            <div class="space-y-[10px]">
+          <div class="max-w-[470px] space-y-[30px]">
+            <div class="tab-content space-y-[10px]" id="automations">
               <h2 class="text-[32px] font-bold leading-[46px]">
                 We’re Helping Big <br />
                 Global Companies Grow
               </h2>
-              <p class="text-lg font-medium leading-8">
-                Track your customers behavior to make a good decision <br />
-                that helps the customer use our services better way.
-              </p>
+              <p class="text-lg font-medium leading-8">Track your customers behavior to make a good decision that helps the customer use our services better way.</p>
             </div>
+
+            <div class="tab-content hidden space-y-[10px]" id="realtime">
+              <h2 class="text-[32px] font-bold leading-[46px]">Real-time Monitoring for Seamless Experience</h2>
+              <p class="text-lg font-medium leading-8">Stay up-to-date with instant data updates and notifications, enabling you to make informed decisions quickly and efficiently.</p>
+            </div>
+
+            <div class="tab-content hidden space-y-[10px]" id="lifetime-support">
+              <h2 class="text-[32px] font-bold leading-[46px]">Lifetime Support for Your Peace of Mind</h2>
+              <p class="text-lg font-medium leading-8">We provide dedicated support throughout your journey, ensuring you have assistance whenever you need it.</p>
+            </div>
+
+            <div class="tab-content hidden space-y-[10px]" id="high-protection">
+              <h2 class="text-[32px] font-bold leading-[46px]">High Protection to Safeguard Your Data</h2>
+              <p class="text-lg font-medium leading-8">With top-notch security measures, we ensure your data is protected from threats, keeping your business secure at all times.</p>
+            </div>
+
             <ul class="space-y-5">
               <li class="flex items-center text-lg font-bold">
                 <img src="assets/image/icons/icon.svg" alt="" class="mr-3" />
@@ -327,11 +393,7 @@
           </div>
         </div>
       </div>
-      <img
-        src="assets/image/thumbnails/cover.jpg"
-        alt=""
-        class="absolute right-0 top-0 h-[500px] w-1/2 object-cover object-center"
-      />
+      <img src="assets/image/thumbnails/cover.jpg" alt="" class="absolute right-0 top-0 h-[500px] w-1/2 object-cover object-center" />
     </section>
 
     <footer class="relative w-full bg-white">
@@ -401,5 +463,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="assets/js/tab.js"></script>
   </body>
 </html>
