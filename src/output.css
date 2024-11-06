@@ -889,6 +889,10 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-transparent {
+  border-color: transparent;
+}
+
 .bg-\[\#ABB4B1\] {
   --tw-bg-opacity: 1;
   background-color: rgb(171 180 177 / var(--tw-bg-opacity));
@@ -1123,10 +1127,29 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 body {
   font-family: 'Raleway';
   --tw-text-opacity: 1;
   color: rgb(11 37 28 / var(--tw-text-opacity));
+}
+
+.hover\:border-b-\[3px\]:hover {
+  border-bottom-width: 3px;
+}
+
+.hover\:border-pastilaris-black:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(11 37 28 / var(--tw-border-opacity));
 }
 
 .hover\:text-pastilaris-primary:hover {

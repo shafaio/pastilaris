@@ -11,9 +11,9 @@ document.querySelectorAll(".tab-button").forEach((button) => {
     document.getElementById(tabName).classList.remove("hidden");
 
     document.querySelectorAll(".tab-button").forEach((btn) => {
-      btn.classList.remove("border-b-[3px]", "border-pastilaris-black", "bg-pastilaris-primary", "text-black", "font-semibold");
+      btn.classList.remove("border-pastilaris-black", "bg-pastilaris-primary", "text-black", "font-semibold");
 
-      btn.classList.add("font-medium");
+      btn.classList.add("font-medium", "border-transparent");
 
       btn.querySelector("div").classList.remove("bg-pastilaris-primary");
       btn.querySelector("div").classList.add("bg-[#ABB4B1]");
@@ -24,7 +24,9 @@ document.querySelectorAll(".tab-button").forEach((button) => {
     });
 
     // Tambahkan style untuk tombol aktif
-    button.classList.add("border-b-[3px]", "border-pastilaris-black", "font-semibold", "pb-[30px]");
+    button.classList.remove("border-transparent");
+
+    button.classList.add("border-pastilaris-black", "font-semibold");
 
     button.querySelector("div").classList.remove("bg-pastilaris-primary");
 
